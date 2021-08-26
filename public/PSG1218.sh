@@ -30,5 +30,5 @@ sed -i "s/192.168.2/$lan_ip/g" $default_path/defaults.h
 # echo "CONFIG_FIRMWARE_CPU_600MHZ=y" >> $config
 
 # echo "集成 KMS 激活服务器"
-# sed -i "s/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n/CONFIG_FIRMWARE_INCLUDE_VLMCSD=y/g" $config
+sed -i "s/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n/CONFIG_FIRMWARE_INCLUDE_VLMCSD=y/g" $config
 
