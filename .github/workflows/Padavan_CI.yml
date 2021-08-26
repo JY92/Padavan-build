@@ -32,6 +32,8 @@ env:
     CONFIG_FIRMWARE_INCLUDE_LANG_CN
     CONFIG_FIRMWARE_ENABLE_IPV6
     CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS
+    CONFIG_FIRMWARE_INCLUDE_ALIDDNS
+    CONFIG_FIRMWARE_INCLUDE_FRPC
   DISABLED_CFG: |
     CONFIG_FIRMWARE_INCLUDE_LANG_UK
     CONFIG_FIRMWARE_INCLUDE_TCPDUMP
@@ -68,7 +70,7 @@ jobs:
       matrix:
         include:
           - build_variant: "mt7620"
-            targets: "PSG1208 PSG1218 NEWIFI-MINI MI-MINI MI-3 OYE-001 5K-W20"
+            targets: "NEWIFI-MINI"
     steps:
       - name: Checkout main            # 导入主分支
         uses: actions/checkout@v2
